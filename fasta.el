@@ -85,6 +85,11 @@
   "Face to use when showing weak interaction."
   :group 'fasta)
 
+(defface fasta-not-adenine-face
+  '((t :foreground "white" :background "#5050ff"))
+  "Face to use when showing not adenine."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -98,7 +103,8 @@
     ("[Kk]"  . 'fasta-ketone-face)
     ("[Mm]"  . 'fasta-amine-face)
     ("[Ss]"  . 'fasta-strong-face)
-    ("[Ww]"  . 'fasta-weak-face))
+    ("[Ww]"  . 'fasta-weak-face)
+    ("[Bb]"  . 'fasta-not-adenine-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
