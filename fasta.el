@@ -75,6 +75,11 @@
   "Face to use when showing an amine."
   :group 'fasta)
 
+(defface fasta-strong-face
+  '((t :inherit default))
+  "Face to use when showing strong interaction."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -86,7 +91,8 @@
     ("[Rr]"  . 'fasta-purine-face)
     ("[Yy]"  . 'fasta-pyrimidine-face)
     ("[Kk]"  . 'fasta-ketone-face)
-    ("[Mm]"  . 'fasta-amine-face))
+    ("[Mm]"  . 'fasta-amine-face)
+    ("[Ss]"  . 'fasta-strong-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
