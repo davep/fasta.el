@@ -34,7 +34,7 @@
 
 (defface fasta-header-face
   '((t :inherit font-lock-function-name-face))
-  "Face to use when showing \"header\" line."
+  "Face to use when showing a \"header\" line."
   :group 'fasta)
 
 (defface fasta-adenine-face
