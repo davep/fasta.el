@@ -50,13 +50,19 @@
   "Face to use when showing thymine."
   :group 'fasta)
 
+(defface fasta-uracil-face
+  '((t :foreground "#cc9900"))
+  "Face to use when showing uracil."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
     ("[Aa]"  . 'fasta-adenine-face)
     ("[Cc]"  . 'fasta-cytosine-face)
     ("[Gg]"  . 'fasta-guanine-face)
-    ("[Tt]"  . 'fasta-thymine-face))
+    ("[Tt]"  . 'fasta-thymine-face)
+    ("[Uu]"  . 'fasta-uracil-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
