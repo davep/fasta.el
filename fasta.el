@@ -55,6 +55,11 @@
   "Face to use when showing uracil."
   :group 'fasta)
 
+(defface fasta-purine-face
+  '((t :foreground "#2e8b57"))
+  "Face to use when showing a purine."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -62,7 +67,8 @@
     ("[Cc]"  . 'fasta-cytosine-face)
     ("[Gg]"  . 'fasta-guanine-face)
     ("[Tt]"  . 'fasta-thymine-face)
-    ("[Uu]"  . 'fasta-uracil-face))
+    ("[Uu]"  . 'fasta-uracil-face)
+    ("[Rr]"  . 'fasta-purine-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
