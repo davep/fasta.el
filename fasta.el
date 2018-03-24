@@ -172,8 +172,8 @@
 
 (defvar fasta-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c a") #'fasta-beginning-of-sequence)
-    (define-key map (kbd "C-c e") #'fasta-end-of-sequence)
+    (define-key map (kbd "C-c C-a") #'fasta-beginning-of-sequence)
+    (define-key map (kbd "C-c C-e") #'fasta-end-of-sequence)
     map)
   "Local keymap for `fasta-mode'.")
 
