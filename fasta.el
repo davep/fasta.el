@@ -100,6 +100,16 @@
   "Face to use when showing not guanine."
   :group 'fasta)
 
+(defface fasta-not-thymine-uracil-face
+  '((t :foreground "white" :background "#969600"))
+  "Face to use when showing not thymine/uracil."
+  :group 'fasta)
+
+(defface fasta-nucleic-acid-face
+  '((t :inherit default))
+  "Face to use when showing a nucleic acid."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -116,7 +126,9 @@
     ("[Ww]"  . 'fasta-weak-face)
     ("[Bb]"  . 'fasta-not-adenine-face)
     ("[Dd]"  . 'fasta-not-cytosine-face)
-    ("[Hh]"  . 'fasta-not-guanine-face))
+    ("[Hh]"  . 'fasta-not-guanine-face)
+    ("[Vv]"  . 'fasta-not-thymine-uracil-face)
+    ("[NN]"  . 'fasta-nucleic-acid-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
