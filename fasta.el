@@ -115,6 +115,11 @@
   "Face to use when showing a gap."
   :group 'fasta)
 
+(defface fasta-translation-stop-face
+  '((t :inherit font-lock-doc-face))
+  "Face to use when showing a translation stop."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -134,7 +139,8 @@
     ("[Hh]"  . 'fasta-not-guanine-face)
     ("[Vv]"  . 'fasta-not-thymine-uracil-face)
     ("[NN]"  . 'fasta-nucleic-acid-face)
-    ("-"     . 'fasta-gap-face))
+    ("-"     . 'fasta-gap-face)
+    ("\\*"   . 'fasta-translation-stop-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
