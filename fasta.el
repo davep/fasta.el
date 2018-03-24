@@ -60,6 +60,11 @@
   "Face to use when showing a purine."
   :group 'fasta)
 
+(defface fasta-pyrimidine-face
+  '((t :foreground "#ff8c00"))
+  "Face to use when showing a pyrimidine."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -68,7 +73,8 @@
     ("[Gg]"  . 'fasta-guanine-face)
     ("[Tt]"  . 'fasta-thymine-face)
     ("[Uu]"  . 'fasta-uracil-face)
-    ("[Rr]"  . 'fasta-purine-face))
+    ("[Rr]"  . 'fasta-purine-face)
+    ("[Yy]"  . 'fasta-pyrimidine-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
