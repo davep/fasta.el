@@ -143,6 +143,7 @@
     ("\\*"   . 'fasta-translation-stop-face))
   "Font lock rules for `fasta-mode'.")
 
+;;;###autoload
 (define-derived-mode fasta-mode fundamental-mode "fasta"
   "Major mode for editing fasta files."
   (setq font-lock-defaults '(fasta-font-lock)))
