@@ -162,9 +162,18 @@
   (while (not (or (fasta-comment-line-p) (bobp)))
     (forward-line -1)))
 
+(defun fasta-end-of-sequence ()
+  "Move `point' to the end of the current sequence."
+  (interactive)
+  (when (fasta-comment-line-p)
+    (forward-line))
+  (while (and (fasta-sequence-line-p) (not (eobp)))
+    (forward-line)))
+
 (defvar fasta-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "C-c a") #'fasta-beginning-of-sequence)
+    (define-key map (kbd "C-c e") #'fasta-end-of-sequence)
     map)
   "Local keymap for `fasta-mode'.")
 
