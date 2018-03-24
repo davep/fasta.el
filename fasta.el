@@ -32,6 +32,11 @@
   "Mode for working with FASTA files."
   :group 'text)
 
+(defface fasta-header-face
+  '((t :inherit font-lock-function-name-face))
+  "Face to use when showing \"header\" line."
+  :group 'fasta)
+
 (defface fasta-adenine-face
   '((t :foreground "#5050ff"))
   "Face to use when showing adenine."
@@ -123,7 +128,7 @@
   :group 'fasta)
 
 (defvar fasta-font-lock
-  '(("^>.*$" . 'font-lock-function-name-face)
+  '(("^>.*$" . 'fasta-header-face)
     ("^#.*$" . 'font-lock-comment-face)
     ("[Aa]"  . 'fasta-adenine-face)
     ("[Cc]"  . 'fasta-cytosine-face)
