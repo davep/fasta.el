@@ -50,19 +50,13 @@
   "Face to use when showing thymine."
   :group 'fasta)
 
-;; Variable to face mapping.
-(defvar fasta-adenine-face  'fasta-adenine-face)
-(defvar fasta-cytosine-face 'fasta-cytosine-face)
-(defvar fasta-guanine-face  'fasta-guanine-face)
-(defvar fasta-thymine-face  'fasta-thymine-face)
-
 (defvar fasta-font-lock
-  '(("^>.*$" . font-lock-function-name-face)
-    ("^#.*$" . font-lock-comment-face)
-    ("[Aa]"  . fasta-adenine-face)
-    ("[Cc]"  . fasta-cytosine-face)
-    ("[Gg]"  . fasta-guanine-face)
-    ("[Tt]"  . fasta-thymine-face))
+  '(("^>.*$" . 'font-lock-function-name-face)
+    ("^#.*$" . 'font-lock-comment-face)
+    ("[Aa]"  . 'fasta-adenine-face)
+    ("[Cc]"  . 'fasta-cytosine-face)
+    ("[Gg]"  . 'fasta-guanine-face)
+    ("[Tt]"  . 'fasta-thymine-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
