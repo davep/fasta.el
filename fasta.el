@@ -70,6 +70,11 @@
   "Face to use when showing a ketone."
   :group 'fasta)
 
+(defface fasta-amine-face
+  '((t :inherit default))
+  "Face to use when showing an amine."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -80,7 +85,8 @@
     ("[Uu]"  . 'fasta-uracil-face)
     ("[Rr]"  . 'fasta-purine-face)
     ("[Yy]"  . 'fasta-pyrimidine-face)
-    ("[Kk]"  . 'fasta-ketone-face))
+    ("[Kk]"  . 'fasta-ketone-face)
+    ("[Mm]"  . 'fasta-amine-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
