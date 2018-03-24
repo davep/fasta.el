@@ -22,7 +22,9 @@
 
 ;;; Commentary:
 ;;
-;; fasta.el provides a mode for working with FASTA format files.
+;; fasta.el implements a simple major mode for viewing and editing fasta
+;; files. It's not designed to be anything too clever, I just wrote it to
+;; make fasta files look nicer in Emacs.
 
 ;;; Code:
 
