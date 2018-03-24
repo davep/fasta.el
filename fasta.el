@@ -31,22 +31,22 @@
   :group 'text)
 
 (defface fasta-adenine-face
-  '((t :foreground "green"))
+  '((t :foreground "#5050ff"))
   "Face to use when showing adenine."
   :group 'fasta)
 
 (defface fasta-cytosine-face
-  '((t :foreground "blue"))
+  '((t :foreground "#e00000"))
   "Face to use when showing cytosine."
   :group 'fasta)
 
 (defface fasta-guanine-face
-  '((t :foreground "red"))
+  '((t :foreground "#00c000"))
   "Face to use when showing guanine."
   :group 'fasta)
 
 (defface fasta-thymine-face
-  '((t :foreground "black"))
+  '((t :foreground "#969600"))
   "Face to use when showing thymine."
   :group 'fasta)
 
