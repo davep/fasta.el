@@ -134,7 +134,7 @@
 
 (defvar fasta-font-lock
   '(("^>.*$" . 'fasta-header-face)
-    ("^#.*$" . 'fasta-comment-face)
+    ("^;.*$" . 'fasta-comment-face)
     ("[Aa]"  . 'fasta-adenine-face)
     ("[Cc]"  . 'fasta-cytosine-face)
     ("[Gg]"  . 'fasta-guanine-face)
