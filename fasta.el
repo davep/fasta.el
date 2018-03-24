@@ -110,6 +110,11 @@
   "Face to use when showing a nucleic acid."
   :group 'fasta)
 
+(defface fasta-gap-face
+  '((t :inherit font-lock-preprocessor-face))
+  "Face to use when showing a gap."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -128,7 +133,8 @@
     ("[Dd]"  . 'fasta-not-cytosine-face)
     ("[Hh]"  . 'fasta-not-guanine-face)
     ("[Vv]"  . 'fasta-not-thymine-uracil-face)
-    ("[NN]"  . 'fasta-nucleic-acid-face))
+    ("[NN]"  . 'fasta-nucleic-acid-face)
+    ("-"     . 'fasta-gap-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
