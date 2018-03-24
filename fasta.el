@@ -143,6 +143,31 @@
     ("\\*"   . 'fasta-translation-stop-face))
   "Font lock rules for `fasta-mode'.")
 
+(defun fasta-comment-line-p ()
+  "Are we on a comment line?"
+  (save-excursion
+    (setf (point) (line-beginning-position))
+    (looking-at-p "^[>;]")))
+
+(defun fasta-sequence-line-p ()
+  "Are we on a line of sequence data?"
+  (save-excursion
+    (setf (point) (line-beginning-position))
+    (not (or (fasta-comment-line-p) (looking-at-p "^[[:space:]]*$")))))
+
+(defun fasta-beginning-of-sequence ()
+  "Move `point' to the start of the current sequence."
+  (interactive)
+  (setf (point) (line-beginning-position))
+  (while (not (or (fasta-comment-line-p) (bobp)))
+    (forward-line -1)))
+
+(defvar fasta-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "C-c a") #'fasta-beginning-of-sequence)
+    map)
+  "Local keymap for `fasta-mode'.")
+
 ;;;###autoload
 (define-derived-mode fasta-mode fundamental-mode "fasta"
   "Major mode for editing fasta files."
