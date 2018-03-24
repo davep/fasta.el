@@ -37,6 +37,11 @@
   "Face to use when showing a \"header\" line."
   :group 'fasta)
 
+(defface fasta-comment-face
+  '((t :inherit font-lock-comment-face))
+  "Face to use when showing a comment line."
+  :group 'fasta)
+
 (defface fasta-adenine-face
   '((t :foreground "#5050ff"))
   "Face to use when showing adenine."
@@ -129,7 +134,7 @@
 
 (defvar fasta-font-lock
   '(("^>.*$" . 'fasta-header-face)
-    ("^#.*$" . 'font-lock-comment-face)
+    ("^#.*$" . 'fasta-comment-face)
     ("[Aa]"  . 'fasta-adenine-face)
     ("[Cc]"  . 'fasta-cytosine-face)
     ("[Gg]"  . 'fasta-guanine-face)
