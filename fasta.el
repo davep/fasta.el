@@ -90,6 +90,11 @@
   "Face to use when showing not adenine."
   :group 'fasta)
 
+(defface fasta-not-cytosine-face
+  '((t :foreground "white" :background "#e00000"))
+  "Face to use when showing not cytosine."
+  :group 'fasta)
+
 (defvar fasta-font-lock
   '(("^>.*$" . 'font-lock-function-name-face)
     ("^#.*$" . 'font-lock-comment-face)
@@ -104,7 +109,8 @@
     ("[Mm]"  . 'fasta-amine-face)
     ("[Ss]"  . 'fasta-strong-face)
     ("[Ww]"  . 'fasta-weak-face)
-    ("[Bb]"  . 'fasta-not-adenine-face))
+    ("[Bb]"  . 'fasta-not-adenine-face)
+    ("[Dd]"  . 'fasta-not-cytosine-face))
   "Font lock rules for `fasta-mode'.")
 
 (define-derived-mode fasta-mode fundamental-mode "fasta"
