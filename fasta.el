@@ -190,6 +190,9 @@
   "Local keymap for `fasta-mode'.")
 
 ;;;###autoload
+(add-to-list 'auto-mode-alist '("\\.f\\(asta\\|na\\|fn\\|aa\\|rn\\)\\'" . fasta-mode))
+
+;;;###autoload
 (define-derived-mode fasta-mode fundamental-mode "fasta"
   "Major mode for editing fasta files."
   (setq font-lock-defaults '(fasta-font-lock)))
