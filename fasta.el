@@ -95,7 +95,8 @@
   :group 'fasta)
 
 (defface fasta-strong-face
-  '((t :inherit default))
+  '((((background dark)) :foreground "#ffc000")
+    (t :foreground "#bbc000"))
   "Face to use when showing strong interaction."
   :group 'fasta)
 
