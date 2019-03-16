@@ -49,8 +49,8 @@
   :group 'fasta)
 
 (defface fasta-cytosine-face
-  '((((background dark)) :foreground "#e00000")
-    (t :foreground "#e00000"))
+  '((((background dark)) :foreground "#ff0000")
+    (t :foreground "#bb0000"))
   "Face to use when showing cytosine."
   :group 'fasta)
 
