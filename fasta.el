@@ -137,8 +137,7 @@
   :group 'fasta)
 
 (defface fasta-translation-stop-face
-  '((((background dark)) :foreground "#5050ff")
-    (t :inherit font-lock-doc-face))
+  '((t :inherit font-lock-doc-face))
   "Face to use when showing a translation stop."
   :group 'fasta)
 
