@@ -85,7 +85,8 @@
   :group 'fasta)
 
 (defface fasta-ketone-face
-  '((t :inherit default))
+  '((((background dark)) :foreground "#bbc000")
+    (t :foreground "#96c000"))
   "Face to use when showing a ketone."
   :group 'fasta)
 
