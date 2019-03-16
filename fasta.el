@@ -121,7 +121,7 @@
   :group 'fasta)
 
 (defface fasta-not-thymine-uracil-face
-  '((((background dark)) :foreground "#5050ff")
+  '((((background dark)) :foreground "black" :background "#bbbb00")
     (t :foreground "white" :background "#969600"))
   "Face to use when showing not thymine/uracil."
   :group 'fasta)
