@@ -43,8 +43,8 @@
   :group 'fasta)
 
 (defface fasta-adenine-face
-  '((((background dark)) :foreground "#5050ff")
-    (t :foreground "#5050ff"))
+  '((((background dark)) :foreground "#8dd4e8")
+    (t :foreground "#4b5cc4"))
   "Face to use when showing adenine."
   :group 'fasta)
 
