@@ -105,7 +105,8 @@
   :group 'fasta)
 
 (defface fasta-not-adenine-face
-  '((t :foreground "white" :background "#5050ff"))
+  '((((background dark)) :foreground "black" :background "#8dd4e8")
+    (t :foreground "white" :background "#4b5cc4"))
   "Face to use when showing not adenine."
   :group 'fasta)
 
