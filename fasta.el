@@ -162,6 +162,7 @@
     ("V"     . 'fasta-not-thymine-uracil-face)
     ("N"     . 'fasta-nucleic-acid-face)
     ("-"     . 'fasta-gap-face)
+    ("\\."   . 'fasta-gap-face)
     ("\\*"   . 'fasta-translation-stop-face))
   "Font lock rules for `fasta-mode'.")
 
