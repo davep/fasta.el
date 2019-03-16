@@ -1,8 +1,8 @@
 ;;; fasta.el --- Mode for working with fasta files -*- lexical-binding: t -*-
-;; Copyright 2018 by Dave Pearson <davep@davep.org>
+;; Copyright 2018-2019 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
-;; Version: 0.01
+;; Version: 1.0
 ;; Keywords: files, dna, fasta, bioinformatics
 ;; URL: https://github.com/davep/fasta.el
 ;; Package-Requires: ((emacs "24"))
