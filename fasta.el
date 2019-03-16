@@ -61,7 +61,7 @@
   :group 'fasta)
 
 (defface fasta-thymine-face
-  '((((background dark)) :foreground "#969600")
+  '((((background dark)) :foreground "#bbbb00")
     (t :foreground "#969600"))
   "Face to use when showing thymine."
   :group 'fasta)
