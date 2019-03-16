@@ -43,37 +43,44 @@
   :group 'fasta)
 
 (defface fasta-adenine-face
-  '((t :foreground "#5050ff"))
+  '((((background dark)) :foreground "#5050ff")
+    (t :foreground "#5050ff"))
   "Face to use when showing adenine."
   :group 'fasta)
 
 (defface fasta-cytosine-face
-  '((t :foreground "#e00000"))
+  '((((background dark)) :foreground "#e00000")
+    (t :foreground "#e00000"))
   "Face to use when showing cytosine."
   :group 'fasta)
 
 (defface fasta-guanine-face
-  '((t :foreground "#00c000"))
+  '((((background dark)) :foreground "#00c000")
+    (t :foreground "#00c000"))
   "Face to use when showing guanine."
   :group 'fasta)
 
 (defface fasta-thymine-face
-  '((t :foreground "#969600"))
+  '((((background dark)) :foreground "#969600")
+    (t :foreground "#969600"))
   "Face to use when showing thymine."
   :group 'fasta)
 
 (defface fasta-uracil-face
-  '((t :foreground "#cc9900"))
+  '((((background dark)) :foreground "#cc9900")
+    (t :foreground "#cc9900"))
   "Face to use when showing uracil."
   :group 'fasta)
 
 (defface fasta-purine-face
-  '((t :foreground "#2e8b57"))
+  '((((background dark)) :foreground "#2e8b57")
+    (t :foreground "#2e8b57"))
   "Face to use when showing a purine."
   :group 'fasta)
 
 (defface fasta-pyrimidine-face
-  '((t :foreground "#ff8c00"))
+  '((((background dark)) :foreground "#ff8c00")
+    (t :foreground "#ff8c00"))
   "Face to use when showing a pyrimidine."
   :group 'fasta)
 
@@ -108,12 +115,14 @@
   :group 'fasta)
 
 (defface fasta-not-guanine-face
-  '((t :background "#00c000"))
+  '((((background dark)) :foreground "#5050ff")
+    (t :background "#00c000"))
   "Face to use when showing not guanine."
   :group 'fasta)
 
 (defface fasta-not-thymine-uracil-face
-  '((t :foreground "white" :background "#969600"))
+  '((((background dark)) :foreground "#5050ff")
+    (t :foreground "white" :background "#969600"))
   "Face to use when showing not thymine/uracil."
   :group 'fasta)
 
@@ -128,7 +137,8 @@
   :group 'fasta)
 
 (defface fasta-translation-stop-face
-  '((t :inherit font-lock-doc-face))
+  '((((background dark)) :foreground "#5050ff")
+    (t :inherit font-lock-doc-face))
   "Face to use when showing a translation stop."
   :group 'fasta)
 
