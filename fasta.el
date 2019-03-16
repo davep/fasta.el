@@ -115,7 +115,7 @@
   :group 'fasta)
 
 (defface fasta-not-guanine-face
-  '((((background dark)) :foreground "#5050ff")
+  '((((background dark)) :foreground "black" :background "#00c000")
     (t :background "#00c000"))
   "Face to use when showing not guanine."
   :group 'fasta)
