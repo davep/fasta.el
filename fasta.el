@@ -91,7 +91,8 @@
   :group 'fasta)
 
 (defface fasta-amine-face
-  '((t :inherit default))
+  '((((background dark)) :foreground "#ff5cc4")
+    (t :foreground "#bb5cc4"))
   "Face to use when showing an amine."
   :group 'fasta)
 
