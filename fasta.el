@@ -101,7 +101,8 @@
   :group 'fasta)
 
 (defface fasta-weak-face
-  '((t :inherit default))
+  '((((background dark)) :foreground "#8dbb00")
+    (t :foreground "#4b9500"))
   "Face to use when showing weak interaction."
   :group 'fasta)
 
