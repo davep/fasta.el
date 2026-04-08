@@ -210,7 +210,7 @@
 ;;;###autoload
 (define-derived-mode fasta-mode fundamental-mode "fasta"
   "Major mode for editing fasta files."
-  (setq font-lock-defaults '(fasta-font-lock)))
+  (setq font-lock-defaults '(fasta-font-lock nil t)))
 
 (provide 'fasta)
 
