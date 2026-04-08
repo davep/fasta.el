@@ -173,19 +173,19 @@
 (defun fasta-comment-line-p ()
   "Are we on a comment line?"
   (save-excursion
-    (setf (point) (line-beginning-position))
+    (goto-char (line-beginning-position))
     (looking-at-p "^[>;]")))
 
 (defun fasta-sequence-line-p ()
   "Are we on a line of sequence data?"
   (save-excursion
-    (setf (point) (line-beginning-position))
+    (goto-char (line-beginning-position))
     (not (or (fasta-comment-line-p) (looking-at-p "^[[:space:]]*$")))))
 
 (defun fasta-beginning-of-sequence ()
   "Move `point' to the start of the current sequence."
   (interactive)
-  (setf (point) (line-beginning-position))
+  (goto-char (line-beginning-position))
   (while (not (or (fasta-comment-line-p) (bobp)))
     (forward-line -1)))
 
