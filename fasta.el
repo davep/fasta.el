@@ -30,7 +30,8 @@
 
 (defgroup fasta nil
   "Mode for working with FASTA files."
-  :group 'text)
+  :group 'text
+  :prefix "fasta-")
 
 (defface fasta-header-face
   '((t :inherit font-lock-function-name-face))
